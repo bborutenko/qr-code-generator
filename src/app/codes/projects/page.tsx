@@ -2,6 +2,8 @@ import Link from "next/link";
 import { getProjects } from "@/services/project";
 import ProjectsClient from "./components";
 
+export const dynamic = "force-dynamic";
+
 export default async function ProjectsPage() {
   const projects = await getProjects();
 

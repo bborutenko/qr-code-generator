@@ -2,6 +2,8 @@ import Link from "next/link";
 import { getQRCodeAnalytics, getQRCode } from "@/services/hovercode";
 import AnalyticsClient from "./components";
 
+export const dynamic = "force-dynamic";
+
 export default async function AnalyticsPage({
   params,
   searchParams,

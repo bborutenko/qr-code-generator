@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { deleteQRCode, updateQRCode } from "@/services/hovercode";
 import type { HovercodeDisplayCode } from "@/schemas/hovercode";
-import type { ProjectModel } from "@/generated/prisma/models";
+import type { Project as ProjectModel } from "@/generated/prisma";
 
 const isValidUrl = (val: string) => {
   try { new URL(val); return true; } catch { return false; }

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import type { HovercodePaginatedResponse } from "@/schemas/hovercode";
-import type { ProjectModel } from "@/generated/prisma/models";
+import type { Project as ProjectModel } from "@/generated/prisma";
 
 type HovercodeListItem = HovercodePaginatedResponse["results"][number];
 

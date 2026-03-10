@@ -1,5 +1,5 @@
 import { prisma } from "../config/database";
-import type { ProjectModel } from "../generated/prisma/models";
+import type { Project as ProjectModel } from "@/generated/prisma";
 import { deleteQRCode } from "./hovercode";
 
 async function getProjects(): Promise<ProjectModel[]> {

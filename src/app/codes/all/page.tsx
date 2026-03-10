@@ -2,6 +2,8 @@ import { getQRCodes } from "@/services/hovercode";
 import { getProjects } from "@/services/project";
 import { AllCodesClient } from "./components";
 
+export const dynamic = "force-dynamic";
+
 export default async function MyCodesPage({
   searchParams,
 }: {

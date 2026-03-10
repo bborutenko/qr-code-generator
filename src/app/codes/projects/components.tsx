@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import type { ProjectModel } from "@/generated/prisma/models";
+import type { Project as ProjectModel } from "@/generated/prisma";
 
 interface Props {
   projects: ProjectModel[];

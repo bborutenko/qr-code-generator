@@ -4,7 +4,7 @@ import { createQRCode, CreateQRCodeParams, deleteQRCode } from "@/services/hover
 import { createCode } from "@/services/code";
 import { getProjects, createProject } from "@/services/project";
 import { HovercodeCreateCode } from "@/schemas/hovercode";
-import type { ProjectModel } from "@/generated/prisma/models";
+import type { Project as ProjectModel } from "@/generated/prisma";
 
 export async function createQRCodeAction(
   params: CreateQRCodeParams

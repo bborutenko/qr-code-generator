@@ -5,7 +5,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { createQRCodeAction, createCodeAction, deleteQRCodeAction, getProjectsAction, createProjectAction } from "./actions";
 import type { HovercodeCreateCode } from "@/schemas/hovercode";
-import type { ProjectModel } from "@/generated/prisma/models";
+import type { Project as ProjectModel } from "@/generated/prisma";
 
 
 const QR_TYPES = ["Link", "Text"] as const;
